@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osakaa</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="key.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <!-- Profile -->
+    <img class="my-photo" src="./img/aOsaka-Logo.png" alt="AR Logo">
+    <h1>Osakaa Dev</h1>
+    <h5 class="desk">Buy Script / Kerjasama ?</h5>
+
+    <!-- Sosial Media -->
+    <div class="sosmed">
+        <a href="https://wa.me/6289654791642" target="_blank">
+            <i class="ph ph-whatsapp-logo"></i>
+        </a>
+        <a href="https://www.instagram.com/osakaadev.id/" target="_blank">
+            <i class="ph ph-instagram-logo"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCiVMxqftKdYN1zLovA7W3gA" target="_blank">
+            <i class="ph ph-youtube-logo"></i>
+        </a>
+    </div>
+
+    <!-- Link List -->
+    <ul class="links">
+        <li>
+            <a href="https://wa.me/6289654791642" target="_blank" class="link-card">
+                <div class="link-icon">
+                    <i class="ph-fill ph-whatsapp-logo"></i>
+                </div>
+                <p class="link-text">WhastApp</p>
+                <div class="link-action">
+                    <i class="ph-fill ph-copy"></i>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/osakaadev.id/" target="_blank" class="link-card">
+                <div class="link-icon">
+                    <i class="ph-fill ph-instagram-logo"></i>
+                </div>
+                <p class="link-text">Instagram</p>
+                <div class="link-action">
+                    <i class="ph-fill ph-copy"></i>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/channel/UCiVMxqftKdYN1zLovA7W3gA" target="_blank" class="link-card">
+                <div class="link-icon">
+                    <i class="ph-fill ph-youtube-logo"></i>
+                </div>
+                <p class="link-text">Youtube</p>
+                <div class="link-action">
+                    <i class="ph-fill ph-copy"></i>
+                </div>
+            </a>
+        </li>
+        <li>
+
+    </ul>
+
+    <div class="copyright">
+        <img src="./img/taka-mark.png" alt="AR Logo">
+        <p>Copyright Osakaa &copy; 2023</p>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast">
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
+<!-- Key -->
+<script>
+    // take body to change the content
+const body = document.getElementsByTagName('body');
+// stop keyboard shortcuts
+window.addEventListener("keydown", (event) => {
+  if(event.ctrlKey && (event.key === "S" || event.key === "s")) {
+     event.preventDefault();
+    Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Maaf Halaman Ini Gabisa Di Inspeksi"
+});
+  }
+
+  if(event.ctrlKey && (event.key === "C")) {
+     event.preventDefault();
+    Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Maaf Halaman Ini Gabisa Di Inspeksi"
+});
+  }
+  if(event.ctrlKey && (event.key === "E" || event.key === "e")) {
+     event.preventDefault();
+    Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Maaf Halaman Ini Gabisa Di Inspeksi"
+});
+  }
+  if(event.ctrlKey && (event.key === "I" || event.key === "i")) {
+     event.preventDefault();
+    Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Maaf Halaman Ini Gabisa Di Inspeksi"
+});
+  }
+  if(event.ctrlKey && (event.key === "K" || event.key === "k")) {
+     event.preventDefault();
+    Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Maaf Halaman Ini Gabisa Di Inspeksi"
+});
+  }
+  if(event.ctrlKey && (event.key === "U" || event.key === "u")) {
+     event.preventDefault();
+    Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Maaf Halaman Ini Gabisa Di Inspeksi"
+});
+  }
+});
+// stop right click
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+ Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Maaf Halaman Ini Gabisa Di Inspeksi"
+});
+});
+</script>
+
+    <script>
+        $(document).ready(function () {
+            $('#popupModal').modal('show');
+        });
+
+        // Fungsi untuk menutup modal saat tombol "Tutup" diklik
+        function closePopupModal() {
+            $('#popupModal').modal('hide');
+        }
+    </script>
